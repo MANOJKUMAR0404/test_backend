@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+/* ----------------------nav-bar---------------------- */
+.mobile-nav{
+    display: none;
+}
+
+nav{
+    background: linear-gradient(to right,#FF5E00,#9F1FEF);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+    /* border: 1px solid black;  */
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color:black;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.menu ul li{
+    margin-right: 20px;
+    color: white;
+}
+    
+.menu ul li a{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.menu ul li a:hover{
+    border-bottom:1px solid white;
+}
+
+.menu ul li #vendor_button{
+    border: 1px solid black;
+    background: black;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+.menu ul li #download_button{
+    border: 1px solid black;
+    background: #276EBC;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+
+.rectangle_1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo1{
+    position: relative;
+    width:120px;
+    left: 12px;
+    z-index: 2;
+}
+
+hr{
+    color: rgb(159, 31, 239);
+}
+
+.section1{
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+.section1_content{
+    border: 1px solid red;
+}
+/* ---------------------- section - 1 ---------------------- */
+
+.section1 .section1_content .left_content{
+    width: 85vw;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid black;
+}
+.section1 .section1_content .left_content img{
+   width: 100%;
+   height: 100%;
+}
+
+
+.section1 .section1_content .right_content{
+    top: 0;
+    width: 85vw;
+    right: -350px;
+    transition: all 0.5s ease-in-out;
+}
+.section1 .section1_content .right_content img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.nav_button_mobile{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    /* .menu ul{
+        display: none;
+    } */
+
+
+    .nav_button_mobile{
+        display: none;
+    }
+    .menu ul li{
+        display: block;
+        margin-top: 10px;
+    }
+    .menu ul li a{
+        font-size: 15px !important;
+    }
+
+    .menu ul li a:hover{
+        text-decoration: underline;
+    }
+    .rectangle_1{
+        display: none;
+    }
+    .logo1{
+        width: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        width: 100%;
+        border: 1px solid black;
+        overflow-x: hidden;
+        }
+    .Laptop-view{
+        display: none;
+    }
+
+
+    .section1 .section1_content .left_content{
+        width: 95vw;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        transition: all 0.5s ease-in-out;
+    }
+    .section1 .section1_content .left_content .left_image{
+       position: absolute;
+       top: 0;
+       width: 100%;
+       left: 0px;
+       border: 1px solid black;
+       transition: all 0.5s ease-in-out;
+    }
+
+    .section1 .section1_content .left_content .left_image img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+
+
+    .section1 .section1_content .right_content{
+        position: absolute;
+        top: 0;
+        width: 85vw;
+        right: 0px;
+        transition: all 0.5s ease-in-out;
+    }
+    .section1 .section1_content .right_content img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .section1 .section1_content .menu .menu-btn-mobile{
+        position: absolute;
+        top: 4vh;
+        right: 10vw !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .section1 .section1_content .menu .dropdown-content-mobile{
+        display: block;
+        border: 1px solid black;
+        position: absolute;
+        top: 5vh;
+        transition: all 0.5s ease-in-out;
+        z-index: 5;
+    }
+
+
+}

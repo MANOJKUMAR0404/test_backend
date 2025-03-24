@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentEverything.Shop - Appliance Rentals</title>
+    <link rel="stylesheet" href="{% static 'RentEverything/css/home.css' %}">
+    <link rel="icon" type="png" href="{% static 'RentEverything/images/favicon.png' %}" sizes="512x512">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    
+</head>
+<body>
+    <header>
+        <nav class="Laptop-view">
+            <div class="logo">
+                <img class="logo1" src="{% static 'RentEverything/images/logo.png' %}" alt="logo">
+                <img class="rectangle_1" src="{% static 'RentEverything/images/rectangle_1.png' %}" alt="logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#vendor" id="vendor_button">Vendor</a></li>
+                    <li><a href="#app" id="download_button">Download App</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="section1">
+            <div class="section1_content">
+                <div class="left_content">
+                    <div class="left_image">
+                        <img class="section1-image1" src="{% static 'RentEverything/images/rectangle_2.png' %}" alt="section1-image">
+                    </div>
+                </div>
+                {% comment %} <div class="right_content">
+                    <img class="section1-image2" src="{% static 'RentEverything/images/rectangle3.png' %}" alt="section1-image">
+                </div> {% endcomment %}
+                <div class="menu mobile-menu">
+                    <button class="menu-btn-mobile">
+                        <span class="material-symbols-outlined">
+                            menu
+                            </span>
+                    </button>
+                    {% comment %} <ul class="dropdown-content-mobile">
+                        <li><a href="#home">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#Vendor">Vendor</a></li>
+                        <li><a href="#app">Download App</a></li>
+                    </ul> {% endcomment %}
+                </div>
+            {% comment %} </div>
+        </section> {% endcomment %}
+    </header>
+    
+    <script src="{% static 'RentEverything/js/home.js' %}"></script>
+</body>
+
+</html>
