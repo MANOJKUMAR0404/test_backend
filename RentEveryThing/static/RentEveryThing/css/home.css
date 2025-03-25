@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: 1px solid green; */
 }
 
 body{
@@ -50,10 +51,13 @@ a{
 .menu ul li a{
     color: white;
     font-size: 1.2rem;
+    transition: all 0.5s ease-in-out;
+    
 }
 
 .menu ul li a:hover{
-    border-bottom:1px solid white;
+    border-bottom:2px solid white;
+    
 }
 
 .menu ul li #vendor_button{
@@ -94,7 +98,8 @@ hr{
 
 .section1{
     width: 100%;
-    /* border: 1px solid blue; */
+    height: 100vh;
+    border: 1px solid blue;
 }
 
 .section1_content{
@@ -111,8 +116,7 @@ hr{
     border: 1px solid black;
 }
 .section1 .section1_content .left_content img{
-   width: 100%;
-   height: 100%;
+   width: 500px;
 }
 
 
@@ -134,13 +138,403 @@ hr{
     display: none;
 }
 
+.section2{
+    border: 2px solid black;
+    height: 75vh;
+}
+
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    background: #fff;
+    padding: 30px 30px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title-description h1{
+    margin-bottom: 10px;
+    text-align: end;
+    font-size: 2.5rem;
+}
+.title-description p{
+    margin-bottom: 10px;
+    text-align: end;
+    font-size: 1rem;
+}
+
+/* ------------------------- Section 2 ------------------------- */
+
+.section2_img_1{
+    display: flex;
+    justify-content: end;
+}
+.section2_img_1 img{
+    width: 50%;
+}
 
 
 
+.image-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    cursor: grab;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.image-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.image-slider img {
+    height: 250px;
+    padding: 22px;
+    margin-right: 10px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.image-slider:active {
+    cursor: grabbing;
+}
+
+/* --------------------------------------- section 3 --------------------------------------- */
+
+.section_3{
+    height: 140vh;
+    border: 2px solid black;
+}
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);    
+}
+
+/* .section_3 .bg-gray-50 .container{
+    background-image: url('../images/section3_img1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+.text-center{
+    color: white;
+}
+
+
+.timing_location{
+    margin: 20px;
+    width: 600px;
+    height: 100px !important;
+    z-index: 5;
+    border-radius: 20px;
+    padding-right: 15px;
+    padding: 10px !important;
+    background: #e2e2e2;
+    opacity: 0.8;
+    
+}
+
+.location{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.location_name{
+    text-decoration: underline
+}
+
+.time_container{
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.rental_button{
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background: #276EBC;
+    color: white;
+}
+
+/* -------------------------------- Section 4 -------------------------------- */
+.section4{
+    height: 150vh;
+    border: 2px solid black;
+    background: #ffffff;
+    width: 100%;
+    margin:0 auto;
+}
+
+.section4_container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.section4_title{
+    text-align: end;
+    padding: 20px;
+    font-size:2.5rem;
+    z-index: 6 !important;
+    font-weight: 700;
+}
+
+.section4_description{
+    font-size: 1.5rem;
+    text-align: end;
+    padding: 20px;
+    z-index: 6 !important;
+    font-weight: 300;
+}
+
+.section4_line{
+    display: flex;
+    justify-content: end;
+}
+
+/* Container to enable horizontal scrolling */
+.image-container4 {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping */
+    padding: 30px;
+    z-index: 10 !important;
+}
+/* 
+.image-container4::-webkit-scrollbar {
+    display: none;
+} */
+
+.scroll-wrapper4 {
+    display: flex; /* Aligns images in a row */
+    gap: 70px; /* Space between images */
+}
+
+.image-box4 {
+    background: rgba(217, 217, 217, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px; /* Square width */
+    height: 650px; /* Square height */
+    flex-shrink: 0; /* Prevents shrinking */
+    overflow: hidden; /* Prevents overflow */
+}
+
+/* Image styling to fit inside the square */
+.image-box4 img {
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    top: 0;
+    width: 100%;
+    height: 60%;
+    object-fit: cover; /* Ensures images fit inside square without stretching */
+}
+
+.image-box4-title{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.image-box4-description{
+    font-size: 15px;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 10%;
+    margin: 5px;
+    white-space: normal;
+    word-wrap: break-word;
+    color: #9A9898;
+}
+
+.Wishlist{
+    margin-top: 10px;
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+
+.wish_rent_div{
+    /* border: 1px solid black; */
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.price_hr{
+    padding: 13px 20px 13px 20px;
+    background: rgba(255, 255, 255, 0.53);
+    border: 2px solid #FF5E00;
+    border-radius: 15px;
+}
+
+.rental_button2{
+    padding: 13px 35px 13px 35px;
+    background: rgba(255, 255, 255, 0.53);
+    border: 2px solid #FF5E00;
+    border-radius: 15px;
+    color: #FF5E00;
+}
+
+.fa-solid{
+    color: red;
+}
+
+/* ------------------------------- section5 ------------------------------- */
+.section5{
+    height: 100vh;
+    border: 2px solid black;
+    background: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.secion5_container{
+    border-radius: 30px;
+    background-image: url('../images/section5_img1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+.section5_content{
+    /* border: 1px solid red; */
+    padding: 20px;
+}
+
+.section5_title{
+    color: white;
+    width: 100%;
+    text-align: start;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.section5_description{
+    color: white;
+    width: 100%;
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.secion5_img2_container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 10px;
+    /* outline: 1px solid black; */
+    overflow: hidden;
+}
+
+.section5_cards{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+    }
+
+.section5 .section5_cards .card{
+    height: 450px;
+    width: 270px;
+    border-radius: 20px;
+    border: 1px solid black !important;
+    background: rgba(217, 217, 217, 0.5);
+    padding: 10px;
+}
+
+.section5_img_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section5_description1{
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+
+/* -------------------------- For Ipad -------------------------- */
+
+@media screen and (max-width: 960px){
+    /* .menu ul{
+        display: none;
+    } */
+
+
+    .nav_button_mobile{
+        display: none;
+    }
+    .menu ul li{
+        display: block;
+        margin-top: 10px;
+    }
+    .menu ul li a{
+        font-size: 15px !important;
+    }
+
+    .menu ul li a:hover{
+        text-decoration: underline;
+    }
+    .rectangle_1{
+        display: none;
+    }
+    .logo1{
+        width: 100px;
+    }
+
+    
+    .section2{
+        height: 35vh;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .image-slider img {
+        height: 150px;
+    }
 
 
 
+    .section_3{
+        height: 90vh;
+    }
 
+    .section4{
+        height: 80vh;
+    }
+
+    
+}
 
 @media screen and (max-width: 768px){
     /* .menu ul{
@@ -168,6 +562,30 @@ hr{
     .logo1{
         width: 100px;
     }
+
+    
+    .section2{
+        height: 35vh;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .image-slider img {
+        height: 150px;
+    }
+
+    .section_3{
+        height: 95vh;
+    }
+
+    
+    .section4{
+        height: 100vh;
+    }
+
     
 }
 
@@ -203,11 +621,6 @@ hr{
         height: 100%;
     }
 
-
-
-
-
-
     .section1 .section1_content .right_content{
         position: absolute;
         top: 0;
@@ -240,6 +653,151 @@ hr{
         transition: all 0.5s ease-in-out;
         z-index: 5;
     }
+
+        
+    .section2{
+        height: 45vh;
+    }
+
+    .section_3{
+        height:280vh;
+    }
+
+    .title-description h1{
+        margin-bottom: 10px;
+        text-align: end;
+        font-size: 1rem;
+    }
+    .title-description p{
+        margin-bottom: 10px;
+        text-align: end;
+        font-size: 0.7rem;
+    }
+
+
+    .timing_location{
+        margin: 0 auto;
+        width:100%;
+        font-size: 0.6rem;
+    }
+
+        
+    .location{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .location_name{
+        text-decoration: underline
+    }
+
+    .time_container{
+        padding: 0;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .rental_button{
+        margin-left: 20px;
+    }
+
+    .section4{
+        height: 100vh;
+    }
+
+        
+    .section4_title{
+        font-size:1.2rem;
+        z-index: 6;
+        margin: 10px;
+        padding: 0;
+    }
+
+    .section4_description{
+        font-size: 0.7rem;
+        margin: 10px;
+        padding: 0;
+    }
+
+    .section4_line{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: end;
+    }
+
+    .image-box4{
+        width:100%;
+        height: 500px;
+    }
+
+        
+    .image-box4-title{
+        font-size:1rem;
+        margin: 3px;
+    }
+
+    .image-box4-description{
+        font-size: 0.8rem;
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 10%;
+        margin: 3px;
+        white-space: normal;
+        word-wrap: break-word;
+        color: #9A9898;
+    }
+
+    .Wishlist{
+        margin-top: 10px;
+        padding: 15px;
+        background: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 15px;
+    }
+
+    .wish_rent_div{
+        /* border: 1px solid black; */
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .price_hr{
+        padding: 10px 15px 10px 15px;
+        background: rgba(255, 255, 255, 0.53);
+        border: 2px solid #FF5E00;
+        border-radius: 15px;
+    }
+
+    .rental_button2{
+        padding: 10px 15px 10px 15px;
+        background: rgba(255, 255, 255, 0.53);
+        border: 2px solid #FF5E00;
+        border-radius: 15px;
+        color: #FF5E00;
+    }
+        
+    .section5_title{
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+
+    .section5_description{
+        margin-top: 10px;
+        font-size: 1rem;
+    } 
+
+   
+/* 
+    .secion5_img2_container{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 10px;
+        
+    } */
 
 
 }
